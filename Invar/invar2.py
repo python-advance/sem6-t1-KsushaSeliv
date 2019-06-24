@@ -18,7 +18,7 @@ class kniga():
 
     def zapis(self): #записываем всё в файлик
         import json
-        with open("file1.json", 'a') as file:
+        with open("zapis.json", 'a') as file:
             json_data = { "Guests": self.guests }
             file.write(json.dumps(json_data, indent=4))
             
